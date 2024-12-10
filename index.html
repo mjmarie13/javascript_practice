@@ -4,36 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UCG Mart</title>
-    <link rel="stylesheet" href="./Static/styles/Styles.css">
+    <link rel="stylesheet" href="./static/styles/styles.css">
 </head>
 <body>
-<header>
-    <div class="header" id="myHeader">
-        <h1>UCG Mart :3</h1>
-    </div>
-</header>
-<!-- Content container -->
- <div class="cotainer">
-    <!-- Items container -->
-     <section class="items-container">
-        <div class="item-card">
-            <div class="item-header">
-                Oranges
+    <header class="navbar">
+        <h1 class="title">UCG Mart</h1>
+    </header>
+    <div class="container">
+        <!-- Items -->
+        <section class="items-container" id="cart">
+            <div class="item-card">
+                <div class="item-header">
+                    Oranges
                 </div>
                 <div class="item-body">
-                    <img src="./Static/images/Oranges.png">
-                    </div>
-                    <div class="item-footer">
-                    <div class="price">$2.00</div>  
-                    <div class="add item" id="add-orange">
+                    <img src="./static/images/Oranges.jpg" alt="multiple oranges">
+                </div>
+                <div class="item-footer">
+                    <div class="price">$1.00</div>
+                    <div class="add-item" id="add-orange">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
                             <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
                             <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
-                          </svg>
-                          </div>
-                          </div>
-                          </div>
-                          <div class="item-card">
-                            
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="item-card">
+                <div class="item-header">
+                    Apples
+                </div>
+                <div class="item-body">
+                    <img src="./static/images/Apples.jpg" alt="multiple apples">
+                </div>
+                <div class="item-footer">
+                    <div class="price">$2.00</div>
+                    <div class="add-item" id="add-apple">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                            <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
+                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="item-card">
+                <div class="item-header">
+                    Bananas
+                </div>
+                <div class="item-body">
+                    <img src="./static/images/Bananas.jpg" alt="Many Bananas">
+                </div>
+                <div class="item-footer">
+                    <div class="price">$3.00</div>
+                    <div class="add-item" id="add-bananas">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                            <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
+                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="item-card">
+                <div class="item-header">
+                    Avocados
+                </div>
+                <div class="item-body">
+                    <img src="./static/images/Avocados.jpg" alt="Many Alvacados">
+                </div>
+                <div class="item-footer">
+                    <div class="price">$4.00</div>
+                    <div class="add-item" id="add-avocado">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                            <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
+                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Checkout -->
+        <section class="checkout">
+            <div class="cart-header">
+                <h2>Cart</h2>
+                <div class="cart-icon"></div>
+            </div>
+            <div class="cart-body">
+            </div>
+            <div class="cart-footer">
+                <div class="subtotal">
+                    Subtotal <span id="subtotal">0.00</span>
+                </div>
+                <div class="tax">
+                    Sales Tax <span id="tax">8.517%</span>
+                </div>
+                <div class="total">
+                    Total <span id="total">0.00</span>
+                </div>
+            </div>
+            <div class="checkout-button">
+                <a href="./checkout.html">
+                    <button>
+                        Checkout
+                    </button>
+                </a>
+            </div>
+        </section>
+    </div>
+    <footer>
+
+    </footer>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
