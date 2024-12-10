@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
       { id: "add-orange", name: "Oranges" },
       { id: "add-apple", name: "Apples" },
       { id: "add-bananas", name: "Bananas" },
-      { id: "add-avacado", name: "Avacado"}
+      { id: "add-dragonfruit", name: "DragonFruit"},
     ];
   
     // Reference to the cart body where items will be appended
